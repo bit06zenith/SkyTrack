@@ -1,8 +1,7 @@
 # SkyTrack
 A sleek, responsive weather dashboard built with native JavaScript and CSS. Consumes OpenWeatherMap Geocoding, Current Weather, and Map APIs to deliver real-time metrics, localized air quality, precise astronomical timings, and dynamic atmospheric overlay map visualizations.
 
-Markdown
-# SkyTrack Weather Dashboard
+## SkyTrack Weather Dashboard
 A lightweight, highly responsive frontend weather application built using semantic HTML5, modern CSS layouts, and native asynchronous JavaScript. This application communicates with multiple OpenWeatherMap API endpoints to display real-time localized weather insights.
 
 ## 🚀 Features
