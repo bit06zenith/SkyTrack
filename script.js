@@ -5,7 +5,7 @@ document.getElementById("searchbtn").addEventListener('click',function(){
     cityname=searchbar.value.trim();
     if(!cityname){cityname="Bhopal";}
     //use backticks ` to create Template Literals
-    URL1=`http://api.openweathermap.org/geo/1.0/direct?q=${cityname}&limit=1&appid=${apikey}`;
+    URL1=`https://api.openweathermap.org/geo/1.0/direct?q=${cityname}&limit=1&appid=${apikey}`;
     getData();
 })
 
@@ -17,7 +17,7 @@ const getData = async () => {
     let URL2=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}`;
     let response2 = await fetch(URL2);
     let data2 = await response2.json();
-    let URL3=`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apikey}`;
+    let URL3=`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apikey}`;
     let response3 = await fetch(URL3);
     let data3 = await response3.json();
 
