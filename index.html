@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sky<span>Track</span></h1>
+        <div class="search">   <!--geocoding api-->
+            <input id="searchbar" type="text" placeholder="Enter city name">
+            <button id="searchbtn">Search</button>
+        </div>
+    </header>
+
+<!-- Current Weather API-->
+    <div class="card">     
+        <div class="full"><h3>Current weather</h3></div>
+        
+        <div class="cw">
+        <ul>
+            <li id="des">_______________</li>
+            <li id="h">Humidity : _____</li>
+            <li id="p">Pressure : ______</li>
+            <li id="t">Temperature : ______ Kelvin</li>
+        </ul>
+        </div>
+    </div>
+
+<div id="one">
+     <!-- Air Pollution API -->
+    <div class="air">  
+        <div class="full"><h3>Air <br>Conditions</h3></div>
+        <div class="ac">
+            <ul>
+            <li id="ws">Wind Speed : _________</li>
+            <li id="wd">Wind Direction : _________</li>
+            <li id="aqi">Air Quality Index : ________</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Weather maps API - Current -->
+    <div class="time"> 
+        <div class="full"><h3>Sun<br> Timings</h3></div>
+        <ul>
+            <li id="rise">Sunrise Time : _________</li>
+            <li id="set">Sunset Time : __________</li>
+        </ul> 
+    </div>
+</div>
+
+<div id="footer">
+    <div class="footer-content">
+        <p>© <span id="current-year"></span> SkyTrack Weather App</p>
+        <p>Data provided seamlessly by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap API</a></p>
+        <p>Built with Love</p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

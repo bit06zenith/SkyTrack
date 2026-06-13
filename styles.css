@@ -1,0 +1,118 @@
+body{
+    background-color: rgb(29, 28, 28);
+    color:white;
+}
+span{color:rgb(241, 139, 55);}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{font-size: 2.5rem;}
+a{
+    color:rgb(246, 130, 7);
+}
+li{
+    padding:10px;
+    font-size:larger;
+}
+#searchbar{
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    width: 300px;
+}
+.full{
+    background-color: rgb(241, 115, 12);
+    border-radius: 25px 0 0 25px;
+    max-width: 200px;
+    width:fit-content;
+}
+h3{
+    text-shadow: 0 0 10px yellow;
+    font-size: x-large;
+    height:40px;
+    padding:10px 10px 0 10px;
+    border: none;
+    border-radius: 25px;
+}
+#searchbtn{
+    width:100px;
+    background-color: rgb(246, 113, 3);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+.card,.air,.time{
+    display: flex;
+    border: 1px solid rgb(165, 100, 46);
+    margin:10px 0px 10px 0px;
+    background-color: rgba(117, 115, 112, 0.08);
+    border-radius: 25px;
+}
+#one{
+    display: flex;
+    gap:13px;
+    height:30vh;
+}
+.air,.time{
+    width:50%;
+}
+#footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #2b2a2a; 
+    color: #f9f5f5;          
+    text-align: center;
+    font-size: 14px;
+    margin-top:10px;
+    border-top: 1px solid #333333;
+}
+
+@media(max-width:1000px) and (min-width:550px){
+    #one{
+        height:50vh
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    #footer {
+        padding: 15px 0; 
+        font-size: 13px;
+    }
+}
+@media(max-width:549px) and (min-width:0px){
+    h1{
+        display: flex;
+        font-size: 4rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin:2px;
+    }
+    #one{
+        display: block;
+        height:auto;
+    }
+    .air,.time{
+        width:100%;
+    }
+    header{
+        display: block;
+    }
+    .search{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    #footer {
+        padding-top: 10px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
